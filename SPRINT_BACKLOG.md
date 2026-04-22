@@ -100,12 +100,33 @@
 
 ## Pendientes (Backlog)
 
-- Integración real con SUNAT
-- Generación PDF comprobantes
-- PLE mensual
-- Migración datos (si aplica)
-- Despliegue producción
-- Documentación usuario
+| ID | Story | Prioridad | SP |
+|----|-------|-----------|-----|
+| BP-US1 | Integración real SUNAT | Alta | 13 |
+| BP-US2 | Generación PDF comprobantes | Alta | 8 |
+| BP-US3 | PLE mensual | Media | 8 |
+| BP-US4 | Migración datos legacy | Media | 5 |
+| BP-US5 | Despliegue producción | Alta | 5 |
+| BP-US6 | Documentación usuario | Baja | 3 |
+| BP-US7 | Módulo CTS | Baja | 5 |
+| BP-US8 | Módulo Gratificaciones | Baja | 5 |
+
+---
+
+## Definition of Ready
+
+- [ ] Criterios de aceptación claros
+- [ ] Estimación asignada (SP)
+- [ ] Dependencias identificadas
+- [ ] wireframes/diseño si aplica
+
+## Definition of Done
+
+- [ ] Código implementado
+- [ ] Tests unitarios passing
+- [ ] Code review aprobado
+- [ ] Validado contra criterios
+- [ ] Merge a develop
 
 ---
 

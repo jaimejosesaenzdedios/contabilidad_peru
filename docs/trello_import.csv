@@ -1,0 +1,125 @@
+name,desc,list,labels,assignee,members
+"[S1-US1] Setup Entorno","## Tareas
+- [ ] Verificar docker-compose.yml
+- [ ] Configurar pytest
+- [ ] Configurar ESLint + Prettier
+- [ ] Crear script setup.sh
+- [ ] Documentar instalación local","To Do","Backend",Senior,""
+"[S1-US2] JWT Login/Refresh","## Tareas
+- [ ] Implementar POST /api/auth/login
+- [ ] Implementar POST /api/auth/refresh
+- [ ] Implementar GET /api/auth/me
+- [ ] Crear dependencia get_current_user
+- [ ] Configurar CORS","To Do","Backend",Senior,""
+"[S1-US3] Gestionar Usuarios","## Tareas
+- [ ] CRUD /api/core/usuarios
+- [ ] Componente ListaUsuarios
+- [ ] Componente FormUsuario","To Do","Backend,Frontend",Senior,""
+"[S1-US4] Gestionar Empresas","## Tareas
+- [ ] CRUD /api/core/empresas
+- [ ] CRUD series documentales
+- [ ] Componente ListaEmpresas
+- [ ] Componente FormEmpresa","To Do","Backend,Frontend",Junior 1,""
+"[S1-US5] Plan de Cuentas","## Tareas
+- [ ] Modelo con jerarquía
+- [ ] CRUD /api/contabilidad/plan-cuentas
+- [ ] Frontend: ListaCuentas","To Do","Backend,Frontend",Junior 1,""
+"[S1-US6] Asientos Contables","## Tareas
+- [ ] Modelo Asiento, DetalleAsiento
+- [ ] POST /api/contabilidad/asientos
+- [ ] Validación partida doble
+- [ ] Frontend: FormAsiento","To Do","Backend,Frontend",Junior 1,""
+"[S1-US7] Dashboard/Login","## Tareas
+- [ ] Configurar vite proxy
+- [ ] Actualizar api.ts
+- [ ] Componente Login.tsx
+- [ ] Store auth.ts
+- [ ] ProtectedRoute","To Do","Frontend",Junior 3,""
+"[S2-US1] Aprobar/Cerrar Asientos","## Tareas
+- [ ] POST /api/asientos/{id}/aprobar
+- [ ] POST /api/asientos/{id}/cerrar
+- [ ] Frontend: Botones","To Do","Backend,Frontend",Junior 1,""
+"[S2-US2] Balance Comprobación","## Tareas
+- [ ] GET /reportes/balance_comprobacion
+- [ ] Query filtros
+- [ ] Frontend: Tabla balance","To Do","Backend,Frontend",Junior 1,""
+"[S2-US3] Libro Mayor","## Tareas
+- [ ] GET /reportes/mayor
+- [ ] Frontend: MayorCuenta","To Do","Backend,Frontend",Junior 1,""
+"[S2-US4] Gestionar Almacenes","## Tareas
+- [ ] Modelo Almacen
+- [ ] CRUD /api/inventario/almacenes
+- [ ] Frontend","To Do","Backend,Frontend",Junior 1,""
+"[S2-US5] Gestionar Productos","## Tareas
+- [ ] Modelo Producto
+- [ ] CRUD /api/inventario/productos
+- [ ] Frontend","To Do","Backend,Frontend",Junior 1,""
+"[S2-US6] Movimientos Kardex","## Tareas
+- [ ] Modelo Kardex
+- [ ] POST /api/inventario/kardex
+- [ ] Frontend: Registro/Historial","To Do","Backend,Frontend",Junior 1,""
+"[S2-US7] Frontend Asientos","## Tareas
+- [ ] Componente ListaAsientos
+- [ ] Componente DetalleAsiento","To Do","Frontend",Junior 3,""
+"[S3-US1] Factura/Boleta","## Tareas
+- [ ] Modelo Comprobante, Detalle
+- [ ] CRUD /api/facturacion/comprobantes
+- [ ] Frontend","To Do","Backend,Frontend",Junior 2,""
+"[S3-US2] Nota Crédito/Débito","## Tareas
+- [ ] Agregar tipo 07, 08
+- [ ] Validación referencia
+- [ ] Frontend NC/ND","To Do","Backend,Frontend",Junior 2,""
+"[S3-US3] Generar XML","## Tareas
+- [ ] Función generar_xml
+- [ ] Templates UBL 2.1
+- [ ] Calcular hash","To Do","Backend",Junior 2,""
+"[S3-US4] Firmar CPE","## Tareas
+- [ ] Función firmar (stub)
+- [ ] POST /comprobantes/{id}/firmar","To Do","Backend",Senior,""
+"[S3-US5] Enviar SUNAT","## Tareas
+- [ ] Stub enviar_sunat
+- [ ] Guardar HistorialEnvio","To Do","Backend",Junior 2,""
+"[S3-US6] Frontend Facturación","## Tareas
+- [ ] ListaComprobantes
+- [ ] Botones acción","To Do","Frontend",Junior 3,""
+"[S3-US7] Anular Comprobante","## Tareas
+- [ ] POST /comprobantes/{id}/anular
+- [ ] Frontend botón","To Do","Backend,Frontend",Junior 2,""
+"[S4-US1] Gestionar Empleados","## Tareas
+- [ ] Modelo Empleado
+- [ ] CRUD /api/nomina/empleados
+- [ ] Frontend","To Do","Backend,Frontend",Junior 2,""
+"[S4-US2] Generar Planilla","## Tareas
+- [ ] Modelo Remuneracion, Descuento
+- [ ] POST /planillas/{id}/generar
+- [ ] Lógica cálculo AFP
+- [ ] Frontend","To Do","Backend,Frontend",Junior 2,""
+"[S4-US3] Exportar PLAME","## Tareas
+- [ ] Función generar_plame
+- [ ] Formato 7.1, 7.2, 7.3
+- [ ] Frontend botón","To Do","Backend,Frontend",Junior 2,""
+"[S4-US4] Asistencia","## Tareas
+- [ ] Modelo Asistencia
+- [ ] CRUD /api/nomina/asistencias
+- [ ] Frontend","To Do","Backend,Frontend",Junior 2,""
+"[S4-US5] Dashboard Nómina","## Tareas
+- [ ] DashboardNómina
+- [ ] KPIs y gráficos","To Do","Frontend",Junior 3,""
+"[S4-US6] Mejoras UI/UX","## Tareas
+- [ ] Revisión UI
+- [ ] Loaders
+- [ ] Toast notifications","To Do","Frontend",Junior 3,""
+"[S4-US7] Tests Coverage","## Tareas
+- [ ] Configurar coverage
+- [ ] Tests APIs
+- [ ] Tests componentes","To Do","Testing,Backend,Frontend",Todos,""
+"Setup Trello","1. Board: Contabilidad Perú - Sprint 1
+2. Listas: Backlog, To Do, In Progress, Code Review, Done
+3. Labels: Backend (azul), Frontend (amarillo), Testing (verde), Bug (rojo), Urgent (naranja)","Backlog","Docs",Todos,""
+"Integración Real SUNAT","## Pendiente
+- Implementar xmlsec
+- Conexión real OSE/SUNAT","Backlog","Backend",Todos,""
+"Generación PDF","## Pendiente
+- Biblioteca pdf (reportlab/fpdf)","Backlog","Backend",Todos,""
+"PLE Mensual","## Pendiente
+- Generación archivos mensuales","Backlog","Backend",Todos,""
