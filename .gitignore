@@ -24,13 +24,26 @@ wheels/
 .installed.cfg
 *.egg
 
-# Django
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Python
 *.log
 local_settings.py
 db.sqlite3
-db.sqlite3-journal
-/media
-/staticfiles
 
 # Environments
 .env
@@ -41,7 +54,7 @@ ENV/
 env.bak/
 venv.bak/
 
-# IDE
+# IDEs
 .idea/
 .vscode/
 *.swp
@@ -54,6 +67,16 @@ Thumbs.db
 
 # Node
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+.coverage
+
+# FastAPI / Uvicorn
+*.log
 npm-debug.log
 yarn-error.log
 
